@@ -1,4 +1,4 @@
-FROM cv_image
+FROM realyunlong/cv_image
 
 ADD requirements.txt ./
 
