@@ -55,22 +55,23 @@ Install [docker](https://www.docker.com/) for Non-GPU user or [nvidia-docker](ht
 #### Step_02:
 Git clone this project to your local compouter, dirctory /home/\<your user name\>/FaceRecognition/. 
 
-Create a folder for datasets, directory /home/<your user name>/FaceRecognition/datasets.
+Create a folder for datasets, directory /home/\<your user name\>/FaceRecognition/datasets.
 
-Create a folder for downloaded models, directory /home/<your user name>/FaceRecognition/models. 
+Create a folder for downloaded models, directory /home/\<your user name\>/FaceRecognition/models. 
 
 #### Step_03:
 Open the docker-compose.yml file, 
 
-> * change the "- /home/yunlong/FaceRecognition/datasets:/app/datasets" to "- /home/<your user name>/FaceRecognition/datasets:/app/datasets"
-> * change the "- /home/yunlong/FaceRecognition/models:/app/datasets" to "- /home/<your user name>/FaceRecognition/models:/app/datasets"
+* change the "- /home/yunlong/FaceRecognition/datasets:/app/datasets" to "- /home/\<your user name\>/FaceRecognition/datasets:/app/datasets"
+
+* change the "- /home/yunlong/FaceRecognition/models:/app/datasets" to "- /home/\<your user name\>/FaceRecognition/models:/app/datasets"
 
 #### Step_04:
 
-> * Linux User: open terminal, type "xhost +local:docker"
+* Linux User: open terminal, type "xhost +local:docker"
 
 #### Step_05:
-Go to the root directory of your facenet project, e.g.: cd /home/<your user name>/FaceRecognition/facenet/
+Go to the root directory of your facenet project, e.g.: cd /home/\<your user name\>/FaceRecognition/facenet/
 
 #### Step_06:
 type "docker-compose up"
