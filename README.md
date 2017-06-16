@@ -53,7 +53,7 @@ To use docker, you need to do following steps,
 Install [docker](https://www.docker.com/) for Non-GPU user or [nvidia-docker](https://github.com/NVIDIA/nvidia-docker) for GPU and Linux. 
 
 #### Step_02:
-Git clone this project to your local compouter, dirctory /home/<your user name>/FaceRecognition/. 
+Git clone this project to your local compouter, dirctory /home/\<your user name\>/FaceRecognition/. 
 
 Create a folder for datasets, directory /home/<your user name>/FaceRecognition/datasets.
 
