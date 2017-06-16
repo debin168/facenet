@@ -1,0 +1,27 @@
+services:
+  facenet:
+    build: .
+    container_name: facenet_container
+    devices:
+    - /dev/nvidia0
+    - /dev/nvidiactl
+    - /dev/nvidia-uvm
+    - /dev/nvidia-uvm-tools
+    entrypoint: sh /etc/pycharm/bin/pycharm.sh
+    environment:
+    - DISPLAY=$DISPLAY
+    image: facenet
+    ports:
+    - 6006:6006
+    stdin_open: true
+    tty: true
+    volumes:
+    - .:/app/facenet
+    - /home/yunlong/FaceRecognition/datasets:/app/datasets
+    - /home/yunlong/FaceRecognition/models:/app/models
+    - /tmp/.X11-unix:/tmp/.X11-unix
+    - nvidia_driver_375.66:/usr/local/nvidia:ro
+version: '2'
+volumes:
+  nvidia_driver_375.66:
+    external: true

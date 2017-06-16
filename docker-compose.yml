@@ -1,0 +1,21 @@
+version: '2'
+
+services:
+
+    facenet:
+        build: .
+        image: facenet 
+        environment: 
+           - DISPLAY=$DISPLAY
+        stdin_open: true
+        tty: true
+        entrypoint: "sh /etc/pycharm/bin/pycharm.sh"
+        ports:
+          - "6006:6006"
+        volumes:
+          - .:/app/facenet
+          - /home/yunlong/FaceRecognition/datasets:/app/datasets
+          - /home/yunlong/FaceRecognition/models:/app/models
+          - /tmp/.X11-unix:/tmp/.X11-unix
+        container_name: facenet_container 
+    
