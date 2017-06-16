@@ -50,7 +50,7 @@ The accuracy on LFW for the model [20170512-110547](https://drive.google.com/fil
 To use docker, you need to do following steps,
 
 ### Step_01: 
-Install [docker](https://www.docker.com/) Non-GPU user or [nvidia-docker](https://github.com/NVIDIA/nvidia-docker) for GPU and Linux. 
+Install [docker](https://www.docker.com/) for Non-GPU user or [nvidia-docker](https://github.com/NVIDIA/nvidia-docker) for GPU and Linux. 
 
 ### Step_02:
 Git clone this project to your local compouter, dirctory /home/<your user name>/FaceRecognition/. 
